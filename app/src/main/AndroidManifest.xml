@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectX"
+        tools:targetApi="31">
+        <activity
+            android:name=".NotesAct"
+            android:exported="false" />
+        <activity
+            android:name=".pdf_viewer"
+            android:exported="false" />
+        <activity
+            android:name=".BCA3"
+            android:exported="false" />
+        <activity
+            android:name=".SEM4SUBJECTS"
+            android:exported="false" />
+        <activity
+            android:name=".followus"
+            android:exported="false" />
+        <activity
+            android:name=".Bca2Sem3CoaShow"
+            android:exported="false" />
+        <activity
+            android:name=".Bca2Sem3DsaShow"
+            android:exported="false" />
+        <activity
+            android:name=".Bca2sem3mathShow"
+            android:exported="false" />
+        <activity
+            android:name=".inOsShowCate"
+            android:exported="false" />
+        <activity
+            android:name=".BCA2SEM3SUBJECTS"
+            android:exported="false" />
+        <activity
+            android:name=".BCA1SEM2DLDSHOWCATE"
+            android:exported="false" />
+        <activity
+            android:name=".BCA1SEM2CPLUSSHOWCATE"
+            android:exported="false" />
+        <activity
+            android:name=".BCA1SEM2ACCOUNTINGSHOWCATE"
+            android:exported="false" />
+        <activity
+            android:name=".BCA1SEM2MATHSHOWCATE"
+            android:exported="false" />
+        <activity
+            android:name=".BCA1SEM2SUBJECTS"
+            android:exported="false" />
+        <activity
+            android:name=".inEnglishShowCate"
+            android:exported="false" />
+        <activity
+            android:name=".inCshowData"
+            android:exported="false" />
+        <activity
+            android:name=".inMathShowCate"
+            android:exported="false" />
+        <activity
+            android:name=".inITtoolsShowCete"
+            android:exported="false" />
+        <activity
+            android:name=".BCA1SEM1CHATE"
+            android:exported="false" />
+        <activity
+            android:name=".BCA2"
+            android:exported="false" />
+        <activity
+            android:name=".BCA1"
+            android:exported="false" />
+        <activity
+            android:name=".SpalseActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

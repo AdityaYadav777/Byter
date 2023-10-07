@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".followus">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/shape4"
+            android:layout_height="match_parent">
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:layout_width="150dp"
+            android:id="@+id/adi"
+            android:layout_height="150dp"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="50dp">
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+
+    android:background="@drawable/shape5"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/aditya"/>
+
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="ADITYA YADAV"
+          android:textSize="23sp"
+          android:textStyle="bold"
+          android:id="@+id/name"
+          android:layout_alignLeft="@+id/adi"
+          android:layout_marginLeft="160dp"
+          android:layout_marginTop="50dp"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Android Developer"
+    android:layout_below="@+id/name"
+    android:layout_marginLeft="210dp"
+android:layout_marginTop="7dp"
+    android:textStyle="bold"
+    android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:src="@drawable/facebook"
+                android:layout_below="@id/name"
+                android:layout_marginLeft="190dp"
+
+                android:id="@+id/fb"
+                android:layout_marginTop="60dp"/>
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:id="@+id/insta"
+                android:src="@drawable/instagram"
+                android:layout_alignLeft="@+id/fb"
+                android:layout_marginTop="142dp"
+                android:layout_marginLeft="60dp"/>
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:id="@+id/google"
+                android:src="@drawable/google"
+                android:layout_alignLeft="@+id/insta"
+                android:layout_marginTop="143dp"
+                android:layout_marginLeft="60dp"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webview"/>
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainback"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33000000"/>
+
+
+</RelativeLayout>

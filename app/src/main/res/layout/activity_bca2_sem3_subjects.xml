@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BCA2SEM3SUBJECTS">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shape"
+        android:padding="10dp"
+        android:text="SUBJECTS"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sem3os"
+        android:layout_width="155dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="55dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sem3math"
+        app:layout_constraintEnd_toStartOf="@+id/sem3math"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/osys"
+                android:id="@+id/tools"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tools"
+                android:text="OS"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sem3math"
+        android:layout_width="155dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toEndOf="@+id/sem3os"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/calculating"
+                android:id="@+id/pie"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pie"
+                android:text="Math"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sem3dsa"
+        android:layout_width="155dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="55dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sem3coa"
+        app:layout_constraintEnd_toEndOf="@+id/sem3os"
+        app:layout_constraintStart_toStartOf="@+id/sem3os"
+        app:layout_constraintTop_toTopOf="@+id/sem3coa">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/hierarchical"
+                android:id="@+id/student"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/student"
+                android:text="DSA"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sem3coa"
+        android:layout_width="155dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sem3math"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/sem3os"
+        app:layout_constraintTop_toBottomOf="@+id/sem3os"
+        app:layout_constraintVertical_bias="0.264">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/circuitboard"
+                android:id="@+id/student1"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/student1"
+                android:text="COA"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

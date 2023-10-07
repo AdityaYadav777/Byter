@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listback"
+    tools:context=".SEM4SUBJECTS">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+android:id="@+id/fistSub"
+        android:elevation="24dp"
+        app:cardElevation="25dp"
+
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/shape4"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="140dp"
+                android:layout_height="165dp"
+                android:id="@+id/icon"
+
+             android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+
+                app:cardCornerRadius="20dp"
+                app:cardElevation="55dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/shape3"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/sqlserver" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="DBMS"
+    android:textSize="17sp"
+    android:layout_marginTop="15dp"
+    android:textStyle="bold"
+    android:layout_below="@+id/img"
+    android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="@dimen/_125sdp"
+
+             android:layout_alignParentRight="true"
+                android:hint="Question Papers"
+android:id="@+id/Aditya1"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dbmsQuestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="@dimen/_125sdp"
+                android:layout_alignParentRight="true"
+                android:hint="Notes"
+android:layout_below="@+id/Aditya1"
+               android:layout_marginTop="5dp"
+android:layout_marginRight="10dp"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dbmsNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/fistSub1"
+                android:elevation="24dp"
+                app:cardElevation="25dp"
+                android:layout_below="@+id/semNmae"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/shape4"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="165dp"
+                        android:id="@+id/icon1"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="55dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:background="@drawable/shape3"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img1"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_centerHorizontal="true"
+
+                                android:src="@drawable/management" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="OR"
+                                android:textSize="17sp"
+                                android:layout_marginTop="15dp"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/img1"
+                                android:layout_centerHorizontal="true"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="@dimen/_125sdp"
+
+                        android:layout_alignParentRight="true"
+                        android:hint="Question Papers"
+                        android:id="@+id/Aditya2"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="10dp"
+
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/orQuestions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="@dimen/_125sdp"
+                        android:layout_alignParentRight="true"
+                        android:hint="Notes"
+                        android:layout_below="@+id/Aditya2"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/orNotes"
+                            android:inputType="none"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/fistSub4"
+                android:elevation="24dp"
+                app:cardElevation="25dp"
+                android:layout_below="@+id/semNmae"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/shape4"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="165dp"
+                        android:id="@+id/icon3"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="55dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:background="@drawable/shape3"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img3"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_centerHorizontal="true"
+
+                                android:src="@drawable/design" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="C Graphics"
+                                android:textSize="17sp"
+                                android:layout_marginTop="15dp"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/img3"
+                                android:layout_centerHorizontal="true"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="@dimen/_125sdp"
+
+                        android:layout_alignParentRight="true"
+                        android:hint="Question Papera"
+                        android:id="@+id/Aditya3"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="10dp"
+
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/cgQuestion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="@dimen/_125sdp"
+                        android:layout_alignParentRight="true"
+                        android:hint="Notes"
+                        android:layout_below="@+id/Aditya3"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cgNotes"
+                            android:inputType="none"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/fistSub5"
+                android:elevation="24dp"
+                app:cardElevation="25dp"
+                android:layout_below="@+id/semNmae"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/shape4"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="165dp"
+                        android:id="@+id/icon4"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="55dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:background="@drawable/shape3"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img4"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_centerHorizontal="true"
+
+                                android:src="@drawable/engineer" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="S.E."
+                                android:textSize="17sp"
+                                android:layout_marginTop="15dp"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/img4"
+                                android:layout_centerHorizontal="true"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="@dimen/_125sdp"
+
+                        android:layout_alignParentRight="true"
+                        android:hint="Question Papers"
+                        android:id="@+id/Aditya4"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="10dp"
+
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/seQues"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="@dimen/_125sdp"
+                        android:layout_alignParentRight="true"
+                        android:hint="Notes"
+                        android:layout_below="@+id/Aditya4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/seNotes"
+                            android:inputType="none"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
