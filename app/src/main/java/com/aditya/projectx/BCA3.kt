@@ -4,6 +4,7 @@ package com.aditya.projectx
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract.CommonDataKinds.Note
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -26,18 +27,18 @@ class BCA3 : AppCompatActivity() {
         val plNotesList= listOf("Notes v1","Notes v2")
 
         val spmQuestionsList= listOf("2019","2020","2023")
-        val spmNotesList= listOf("Notes v1","Notes 2020","Notes 2021","Notes 2022","Notes 2023")
+        val spmNotesList= listOf("Notes v1","Notes v2")
 
         val netQuestionsList= listOf("2019","2020","2023")
-        val netNotesList= listOf("Notes 2019","Notes 2020","Notes 2021","Notes 2022","Notes 2023")
+        val netNotesList= listOf("Notes v1","Notes v2")
 
 //sem 6 questions and Notes List year
 
         val adnnsQuestionsList= listOf("2019","2023")
-        val adnnsNotesList= listOf("Notes 2019","Notes 2020","Notes 2021","Notes 2022","Notes 2023")
+        val adnnsNotesList= listOf("Notes v1")
 
         val webDevQuestionsList= listOf("2019","2023")
-        val webDevNotesList= listOf("Notes 2019","Notes 2020","Notes 2021","Notes 2022","Notes 2023")
+        val webDevNotesList= listOf("Notes v1","Notes v2","Notes v3")
 
 
 //sem 5 Notes and Qustion Urls
@@ -67,10 +68,8 @@ class BCA3 : AppCompatActivity() {
 
 
         val spmUrl2019Notes=" https://drive.google.com/file/d/1l4iovlDAYEUr64ZrzW16ZqjOj5Tca-6e/view?usp=drivesdk"
-        val spmUrl2020Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
-        val spmUrl2021Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
-        val spmUrl2022Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
-        val spmUrl2023Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
+        val spmUrl2020Notes=" https://drive.google.com/file/d/1Xx55WUu4G2QWTPAUcXwjrQQKvql8ZWJD/view?usp=drivesdk"
+
 
         val spmUrl2019Ques=" https://drive.google.com/uc?export=download&id=1NFoxEHC8_4M-JvUOPAtCuhUMWU4dTM_k"
         val spmUrl2020Ques=" https://drive.google.com/uc?export=download&id=1N7GGfqUjy6y8KBhu03IppEtKAb43dSNv"
@@ -79,11 +78,9 @@ class BCA3 : AppCompatActivity() {
 
 
 
-        val netUrl2019Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
-        val netUrl2020Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
-        val netUrl2021Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
-        val netUrl2022Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
-        val netUrl2023Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
+        val netUrl2019Notes=" https://drive.google.com/file/d/1j-q-DE8SgrGt1fKVmKEgxV4TdETQi2jy/view?usp=drivesdk"
+        val netUrl2020Notes="https://drive.google.com/file/d/1de7X7rNtXuctrd9aBnFLww6URWuWKdyg/view?usp=drivesdk"
+
 
         val netUrl2019Ques="https://drive.google.com/uc?export=download&id=1NmQ8pjV3vFIhwyOPq9Ah2hdJCsKI7kaf"
         val netUrl2020Ques=" https://drive.google.com/uc?export=download&id=1N_wQXF0wypDVLBT26Zn8LXBunwbBb9g5"
@@ -93,11 +90,8 @@ class BCA3 : AppCompatActivity() {
 
 //semester 6 subjects
 
-        val adnnsUrl2019Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
-        val adnnsUrl2020Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
-        val adnnsUrl2021Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
-        val adnnsUrl2022Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
-        val adnnsUrl2023Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
+        val adnnsUrl2019Notes="https://drive.google.com/file/d/1Z5fwyNJwWIycMo55jzMmce8Ivgs6zQ7n/view?usp=drivesdk"
+
 
         val adnnsUrl2019Ques=" https://api.bcapoints.in/public/Advance%20Networks%20and%20Network%20Security%202019.pdf"
         val adnnsUrl2023Ques=" https://api.bcapoints.in/public/Advanced%20Network%20&%20Network%20Security%202022-23.pdf"
@@ -105,11 +99,10 @@ class BCA3 : AppCompatActivity() {
 
 
 
-        val webDevUrl2019Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
-        val webDevUrl2020Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
-        val webDevUrl2021Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
-        val webDevUrl2022Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
-        val webDevUrl2023Notes=" https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
+        val webDevUrl2019Notes="https://drive.google.com/file/d/1-aCu5xRzdJPUoVtfNtWOGOOQg4ix9Pe0/view?usp=drivesdk"
+        val webDevUrl2020Notes="https://drive.google.com/file/d/1JMNWhedn2w6wO8gotJPiTEa00lV3K6ao/view?usp=drivesdk"
+        val webDevUrl2021Notes="https://drive.google.com/file/d/1zAVv45NE3C7ms6s9DZsGq92Ul59NGIRR/view?usp=drivesdk"
+
 
         val webDevUrl2019Ques="https://api.bcapoints.in/public/Web%20Developement%20Tool%20&%20Techniques%202019.pdf"
         val webDevUrl2023Ques=" https://api.bcapoints.in/public/Web%20Development%20Tools%20and%20Techniques%202022-23.pdf"
@@ -133,7 +126,6 @@ class BCA3 : AppCompatActivity() {
                 startActivity(i)
             }
 
-
             if(itemSeletct=="2020"){
                 val i= Intent(this,pdf_viewer::class.java)
                 i.putExtra("loadUrl", javaUrl2020Ques)
@@ -156,7 +148,6 @@ class BCA3 : AppCompatActivity() {
                 Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
                 startActivity(i)
             }
-
 
             if(itemSeletct=="Notes v2"){
                 val i= Intent(this,NotesAct::class.java)
@@ -289,33 +280,13 @@ class BCA3 : AppCompatActivity() {
             }
 
 
-            if(itemSeletct=="Notes 2020"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", spmUrl2020Notes)
+            if(itemSeletct=="Notes v2"){
+                val i= Intent(this,NotesAct::class.java)
+                i.putExtra("noteUrl", spmUrl2020Notes)
                 Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
                 startActivity(i)
             }
 
-            if(itemSeletct=="Notes 2021"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", spmUrl2021Notes)
-                Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
-                startActivity(i)
-            }
-
-            if(itemSeletct=="Notes 2022"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", spmUrl2022Notes)
-                Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
-                startActivity(i)
-            }
-
-            if(itemSeletct=="Notes 2023"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", spmUrl2023Notes)
-                Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
-                startActivity(i)
-            }
 
         }
 
@@ -362,41 +333,18 @@ class BCA3 : AppCompatActivity() {
                 parent: AdapterView<*>?, view: View?, position: Int, id: Long ->
             val itemSeletct= parent?.getItemAtPosition(position)
 
-            if(itemSeletct=="Notes 2019"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", netUrl2019Notes)
+            if(itemSeletct=="Notes v1"){
+                val i= Intent(this,NotesAct::class.java)
+                i.putExtra("noteUrl", netUrl2019Notes)
                 Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
                 startActivity(i)
             }
 
-
-            if(itemSeletct=="Notes 2020"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", netUrl2020Notes)
+            if(itemSeletct=="Notes v2"){
+                val i= Intent(this,NotesAct::class.java)
+                i.putExtra("noteUrl", netUrl2020Notes)
                 Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
                 startActivity(i)
-            }
-
-            if(itemSeletct=="Notes 2021"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", netUrl2021Notes)
-                Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
-                startActivity(i)
-            }
-
-            if(itemSeletct=="Notes 2022"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", netUrl2022Notes)
-                Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
-                startActivity(i)
-            }
-
-            if(itemSeletct=="Notes 2023"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", netUrl2023Notes)
-                Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
-                startActivity(i)
-
             }
 
         }
@@ -415,11 +363,6 @@ class BCA3 : AppCompatActivity() {
                 Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
                 startActivity(i)
             }
-
-
-
-
-
 
             if(itemSeletct=="2023"){
                 val i= Intent(this,pdf_viewer::class.java)
@@ -440,41 +383,14 @@ class BCA3 : AppCompatActivity() {
                 parent: AdapterView<*>?, view: View?, position: Int, id: Long ->
             val itemSeletct= parent?.getItemAtPosition(position)
 
-            if(itemSeletct=="Notes 2019"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", adnnsUrl2019Notes)
+            if(itemSeletct=="Notes v1"){
+                val i= Intent(this,NotesAct::class.java)
+                i.putExtra("noteUrl", adnnsUrl2019Notes)
                 Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
                 startActivity(i)
             }
 
 
-            if(itemSeletct=="Notes 2020"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", adnnsUrl2020Notes)
-                Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
-                startActivity(i)
-            }
-
-            if(itemSeletct=="Notes 2021"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", adnnsUrl2021Notes)
-                Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
-                startActivity(i)
-            }
-
-            if(itemSeletct=="Notes 2022"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", adnnsUrl2022Notes)
-                Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
-                startActivity(i)
-            }
-
-            if(itemSeletct=="Notes 2023"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", adnnsUrl2023Notes)
-                Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
-                startActivity(i)
-            }
 
         }
 
@@ -494,9 +410,6 @@ class BCA3 : AppCompatActivity() {
                 startActivity(i)
             }
 
-
-
-
             if(itemSeletct=="2023"){
                 val i= Intent(this,pdf_viewer::class.java)
                 i.putExtra("loadUrl", webDevUrl2023Ques)
@@ -515,41 +428,28 @@ class BCA3 : AppCompatActivity() {
                 parent: AdapterView<*>?, view: View?, position: Int, id: Long ->
             val itemSeletct= parent?.getItemAtPosition(position)
 
-            if(itemSeletct=="Notes 2019"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", webDevUrl2019Notes)
+            if(itemSeletct=="Notes v1"){
+                val i= Intent(this,NotesAct::class.java)
+                i.putExtra("noteUrl", webDevUrl2019Notes)
+                Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
+                startActivity(i)
+            }
+
+            if(itemSeletct=="Notes v2"){
+                val i= Intent(this,NotesAct::class.java)
+                i.putExtra("noteUrl", webDevUrl2020Notes)
+                Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
+                startActivity(i)
+            }
+
+            if(itemSeletct=="Notes v3"){
+                val i= Intent(this,NotesAct::class.java)
+                i.putExtra("noteUrl", webDevUrl2021Notes)
                 Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
                 startActivity(i)
             }
 
 
-            if(itemSeletct=="Notes 2020"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", webDevUrl2020Notes)
-                Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
-                startActivity(i)
-            }
-
-            if(itemSeletct=="Notes 2021"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", webDevUrl2021Notes)
-                Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
-                startActivity(i)
-            }
-
-            if(itemSeletct=="Notes 2022"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", webDevUrl2022Notes)
-                Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
-                startActivity(i)
-            }
-
-            if(itemSeletct=="Notes 2023"){
-                val i= Intent(this,pdf_viewer::class.java)
-                i.putExtra("loadUrl", webDevUrl2023Notes)
-                Toast.makeText(this,"Wait For Few Seconds",Toast.LENGTH_LONG).show()
-                startActivity(i)
-            }
 
         }
 
